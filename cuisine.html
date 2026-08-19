@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =========================================================================
+       HERITAGE INDIA - CUISINE PAGE (cuisine.html)
+       ========================================================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Taste the rich, aromatic, and diverse culinary traditions and famous spices of India across North, South, East, and West regions.">
+  <title>Heritage India - Cuisine</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR & HEADER
+       ========================================================================= -->
+  <header class="header sticky">
+    <div class="nav-container">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-dharmachakra logo-icon"></i>
+        <span class="logo-text">Heritage <span class="logo-sub">India</span></span>
+      </a>
+
+      <!-- Navigation Menu Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="monuments.html" class="nav-item">Monuments</a>
+        <a href="festivals.html" class="nav-item">Festivals</a>
+        <a href="cuisine.html" class="nav-item active">Cuisine</a>
+        <a href="culture.html" class="nav-item">Culture</a>
+        <a href="contact.html" class="nav-btn">Inquire Now</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="hamburger" id="hamburger-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- =========================================================================
+       2. PAGE HEADER BANNER
+       ========================================================================= -->
+  <div class="page-banner">
+    <div class="container">
+      <span class="page-subtitle">A Journey of Six Tastes</span>
+      <h1 class="page-title">Indian Cuisine</h1>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       3. TRADITIONAL CUISINE SECTION WITH REGION FILTERS
+       ========================================================================= -->
+  <section id="cuisine" class="section bg-light-ivory">
+    <div class="container">
+
+      <!-- Region Filter Buttons -->
+      <div class="filter-wrapper">
+        <button class="filter-btn active" data-filter="all">All Cuisine</button>
+        <button class="filter-btn" data-filter="north">North Indian</button>
+        <button class="filter-btn" data-filter="south">South Indian</button>
+        <button class="filter-btn" data-filter="east">East Indian</button>
+        <button class="filter-btn" data-filter="west">West & Central</button>
+      </div>
+
+      <!-- Cuisine Cards Grid -->
+      <div class="grid grid-4 cuisine-grid" id="cuisine-grid">
+
+        <!-- ================= ALL CUISINE CARDS ================= -->
+
+        <!-- Butter Chicken -->
+        <div class="cuisine-card card-item glass-card" data-region="all north">
+          <div class="cuisine-img-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjw75TdNOspMn3Qbke-xzILgAcC1ALEV15bOmrErCUzg&s=10"
+              alt="Butter Chicken" loading="lazy">
+            <div class="cuisine-region">North India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Butter Chicken</h3>
+            <p>Famous North Indian Punjabi dish prepared with chicken, butter, creamy tomato gravy and rich spices.</p>
+          </div>
+        </div>
+
+        <!-- Dosa -->
+        <div class="cuisine-card card-item glass-card" data-region="all south">
+          <div class="cuisine-img-box">
+            <img src="dosa.jpeg" alt="Dosa" loading="lazy">
+            <div class="cuisine-region">South India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Dosa</h3>
+            <p>Traditional South Indian crispy fermented rice pancake served with chutney and sambar.</p>
+          </div>
+        </div>
+
+        <!-- Vada Pav -->
+        <div class="cuisine-card card-item glass-card" data-region="all west">
+          <div class="cuisine-img-box">
+            <img src="vaddapav.jpeg" alt="Vada Pav" loading="lazy">
+            <div class="cuisine-region">West India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Vada Pav</h3>
+            <p>Popular Maharashtrian street food made with spiced potato filling and bread, known as Mumbai's famous
+              snack.</p>
+          </div>
+        </div>
+
+        <!-- Rasgulla -->
+        <div class="cuisine-card card-item glass-card" data-region="all east">
+          <div class="cuisine-img-box">
+            <img src="rasgulla.jpeg" alt="Rasgulla" loading="lazy">
+            <div class="cuisine-region">East India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Rasgulla</h3>
+            <p>Traditional Bengali sweet made with soft cottage cheese balls simmered in sugar syrup.</p>
+          </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="cuisine-card card-item glass-card" data-region="all north south">
+          <div class="cuisine-img-box">
+            <img src="biryani.jpeg" alt="Biryani" loading="lazy">
+            <div class="cuisine-region">Pan India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Biryani</h3>
+            <p>Aromatic basmati rice dish prepared with whole spices and vegetables or meat.</p>
+          </div>
+        </div>
+
+        <!-- Pav Bhaji -->
+        <div class="cuisine-card card-item glass-card" data-region="all west">
+          <div class="cuisine-img-box">
+            <img src="pavbhaji.jpeg" alt="Pav Bhaji" loading="lazy">
+            <div class="cuisine-region">West India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Pav Bhaji</h3>
+            <p>Popular Mumbai street food consisting of spicy mashed vegetable curry served with buttered bread.</p>
+          </div>
+        </div>
+
+        <!-- Idli -->
+        <div class="cuisine-card card-item glass-card" data-region="all south">
+          <div class="cuisine-img-box">
+            <img src="idli.jpeg" alt="Idli" loading="lazy">
+            <div class="cuisine-region">South India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Idli</h3>
+            <p>Soft, fluffy steamed rice cakes served with coconut chutney and hot sambar.</p>
+          </div>
+        </div>
+
+        <!-- Dhokla -->
+        <div class="cuisine-card card-item glass-card" data-region="all west">
+          <div class="cuisine-img-box">
+            <img src="dhokla.jpeg" alt="Dhokla" loading="lazy">
+            <div class="cuisine-region">West India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Dhokla</h3>
+            <p>Gujarati steamed fermented batter snack with a light, spongy texture and delicious taste.</p>
+          </div>
+        </div>
+
+
+        <!-- ================= NORTH INDIAN SPECIFIC DISHES ================= -->
+
+        <!-- Paneer Tikka -->
+        <div class="cuisine-card card-item glass-card" data-region="north">
+          <div class="cuisine-img-box">
+            <img src="psnnertika.jpeg" alt="Paneer Tikka" loading="lazy">
+            <div class="cuisine-region">North India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Paneer Tikka</h3>
+            <p>Grilled cottage cheese cubes marinated in yogurt spices, skewers, and bell peppers.</p>
+          </div>
+        </div>
+
+        <!-- Chole Bhature -->
+        <div class="cuisine-card card-item glass-card" data-region="north">
+          <div class="cuisine-img-box">
+            <img src="cholebhature.jpeg" alt="Chole Bhature" loading="lazy">
+            <div class="cuisine-region">North India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Chole Bhature</h3>
+            <p>Popular Punjabi combination of spicy chickpea curry paired with deep-fried fluffy bread.</p>
+          </div>
+        </div>
+
+        <!-- Paratha -->
+        <div class="cuisine-card card-item glass-card" data-region="north">
+          <div class="cuisine-img-box">
+            <img src="paratha.jpeg" alt="Paratha" loading="lazy">
+            <div class="cuisine-region">North India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Paratha</h3>
+            <p>Traditional stuffed Indian flatbread layered with spiced potatoes or herbs, served with curd and pickles.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- ================= SOUTH INDIAN SPECIFIC DISHES ================= -->
+
+        <!-- Sambar -->
+        <div class="cuisine-card card-item glass-card" data-region="south">
+          <div class="cuisine-img-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgzJATPNYQwg2Y9TjoE08kQgT6fXX9MeFjD9zNsbnZNA&s=10"
+              alt="Sambar" loading="lazy">
+            <div class="cuisine-region">South India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Sambar</h3>
+            <p>Traditional South Indian lentil-based vegetable stew cooked with tamarind broth and aromatic spices.</p>
+          </div>
+        </div>
+
+        <!-- Uttapam -->
+        <div class="cuisine-card card-item glass-card" data-region="south">
+          <div class="cuisine-img-box">
+            <img src="uttapam.jpeg" alt="Uttapam" loading="lazy">
+            <div class="cuisine-region">South India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Uttapam</h3>
+            <p>Thick, soft rice pancake topped cooked with onions, tomatoes, and green chilies.</p>
+          </div>
+        </div>
+
+        <!-- Pongal -->
+        <div class="cuisine-card card-item glass-card" data-region="south">
+          <div class="cuisine-img-box">
+            <img src="pongal.jpeg" alt="Pongal" loading="lazy">
+            <div class="cuisine-region">South India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Pongal</h3>
+            <p>Traditional rice and moong dal savory dish tempered with cumin, black pepper, and cashews prepared during
+              harvest festivals.</p>
+          </div>
+        </div>
+
+
+        <!-- ================= EAST INDIAN SPECIFIC DISHES ================= -->
+
+        <!-- Fish Curry -->
+        <div class="cuisine-card card-item glass-card" data-region="east">
+          <div class="cuisine-img-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_b_XwrSMdsMlQfeEwb4Xv_HFI2U8HGq56V3lYNIJnA&s=10"
+              alt="Fish Curry" loading="lazy">
+            <div class="cuisine-region">East India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Fish Curry</h3>
+            <p>Popular Bengali dish prepared with fresh fish, mustard seeds, and traditional regional spices.</p>
+          </div>
+        </div>
+
+        <!-- Macher Jhol -->
+        <div class="cuisine-card card-item glass-card" data-region="east">
+          <div class="cuisine-img-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5wqJfPpF5znJ0kBf55zDQU19umQkOyB2bKdaCXY9lNw&s=10"
+              alt="Macher Jhol" loading="lazy">
+            <div class="cuisine-region">East India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Macher Jhol</h3>
+            <p>Traditional light Bengali fish stew cooked with turmeric, green chilies, and Nigella seeds.</p>
+          </div>
+        </div>
+
+        <!-- Sandesh -->
+        <div class="cuisine-card card-item glass-card" data-region="east">
+          <div class="cuisine-img-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF465eamBhLcot496jBZ18WYBDxRbVvX1fB0xWeZhGyg&s=10"
+              alt="Sandesh" loading="lazy">
+            <div class="cuisine-region">East India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Sandesh</h3>
+            <p>Delicious Bengali sweet prepared with fresh cottage cheese, cardamom, and saffron or jaggery.</p>
+          </div>
+        </div>
+
+        <!-- Pitha -->
+        <div class="cuisine-card card-item glass-card" data-region="east">
+          <div class="cuisine-img-box">
+            <img src="pitha.jpeg" alt="Pitha" loading="lazy">
+            <div class="cuisine-region">East India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Pitha</h3>
+            <p>Traditional rice-based sweet or savory dumpling dish popular in Eastern India during harvest seasons.</p>
+          </div>
+        </div>
+
+
+        <!-- ================= WEST & CENTRAL SPECIFIC DISHES ================= -->
+
+        <!-- Misal Pav -->
+        <div class="cuisine-card card-item glass-card" data-region="west">
+          <div class="cuisine-img-box">
+            <img src="missalpav.jpeg" alt="Misal Pav" loading="lazy">
+            <div class="cuisine-region">West India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Misal Pav</h3>
+            <p>Maharashtrian spicy sprouted moth bean curry topped with farsan, onions, coriander, and served with
+              bread.</p>
+          </div>
+        </div>
+
+        <!-- Poha -->
+        <div class="cuisine-card card-item glass-card" data-region="west">
+          <div class="cuisine-img-box">
+            <img src="poha.jpeg" alt="Poha" loading="lazy">
+            <div class="cuisine-region">West & Central India</div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Poha</h3>
+            <p>Popular light breakfast dish made of flattened rice tempered with mustard seeds, peanuts, and turmeric in
+              Maharashtra and Madhya Pradesh.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       4. INDIAN SPICES STRIP (Compact Text Style)
+       ========================================================================= -->
+  <section class="spice-strip-section">
+    <div class="container">
+      <div class="spice-strip-header">
+        <i class="fa-solid fa-mortar-pestle"></i>
+        <span class="spice-strip-title">Aromatic Treasures of Indian Spices</span>
+        <i class="fa-solid fa-mortar-pestle"></i>
+      </div>
+      <p class="spice-strip-tagline">Indian cuisine is famous worldwide because of its unique flavors and aromatic spices.</p>
+      <div class="spice-strip-list">
+        <div class="spice-strip-item">
+          <span class="spice-name"><i class="fa-solid fa-bowl-food"></i> Turmeric</span>
+          <span class="spice-desc">Vibrant golden color, distinct taste & traditional healthy cooking.</span>
+        </div>
+        <span class="spice-dot">&#9672;</span>
+        <div class="spice-strip-item">
+          <span class="spice-name"><i class="fa-solid fa-seedling"></i> Cardamom</span>
+          <span class="spice-desc">Sweet aroma & rich fragrant flavor in curries and desserts.</span>
+        </div>
+        <span class="spice-dot">&#9672;</span>
+        <div class="spice-strip-item">
+          <span class="spice-name"><i class="fa-solid fa-tree"></i> Cinnamon</span>
+          <span class="spice-desc">Warm, subtle & sweet taste in biryanis and curries.</span>
+        </div>
+        <span class="spice-dot">&#9672;</span>
+        <div class="spice-strip-item">
+          <span class="spice-name"><i class="fa-solid fa-cubes-stacked"></i> Cloves</span>
+          <span class="spice-desc">Intense aroma for curries & traditional garam masala mixtures.</span>
+        </div>
+        <span class="spice-dot">&#9672;</span>
+        <div class="spice-strip-item">
+          <span class="spice-name"><i class="fa-solid fa-pepper-hot"></i> Cumin</span>
+          <span class="spice-desc">Earthy spice used in hot oil tempering for many Indian recipes.</span>
+        </div>
+        <span class="spice-dot">&#9672;</span>
+        <div class="spice-strip-item">
+          <span class="spice-name"><i class="fa-solid fa-leaf"></i> Coriander</span>
+          <span class="spice-desc">Citrusy freshness & warm flavor in Indian curries and gravies.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       5. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="grid grid-4 footer-grid">
+
+        <!-- Column 1: Branding -->
+        <div class="footer-col branding-col">
+          <a href="index.html" class="logo footer-logo">
+            <i class="fa-solid fa-dharmachakra logo-icon"></i>
+            <span class="logo-text text-white">Heritage <span class="logo-sub">India</span></span>
+          </a>
+          <p class="footer-about-text">Dedicated to chronicling, preserving, and promoting the historic architectures,
+            regional cultures, and traditional sciences of India.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/incredibleindia" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/incredibleindia/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@incredibleindia" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About India</a></li>
+            <li><a href="monuments.html">Monuments</a></li>
+            <li><a href="festivals.html">Festivals</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Explore More -->
+        <div class="footer-col">
+          <h3>Explore More</h3>
+          <ul class="footer-links">
+            <li><a href="cuisine.html">Traditional Cuisine</a></li>
+            <li><a href="culture.html">Art & Culture</a></li>
+            <li><a href="contact.html">Inquire & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Support -->
+        <div class="footer-col support-col">
+          <h3>Inquiries & Support</h3>
+          <p>National Tourist Helpline (Toll-Free, 24/7):</p>
+          <div class="helpline-number">
+            <i class="fa-solid fa-headset"></i>
+            <span>1363</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Heritage India Tourism Project. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

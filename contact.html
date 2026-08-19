@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- HERITAGE INDIA - CONTACT PAGE (contact.html) -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Inquire about custom heritage travel plans, cultural tours, and connect with Indian tourism experts.">
+  <title>Heritage India - Contact</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 1. NAVIGATION BAR & HEADER  -->
+  <header class="header sticky">
+    <div class="nav-container">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-dharmachakra logo-icon"></i>
+        <span class="logo-text">Heritage <span class="logo-sub">India</span></span>
+      </a>
+
+      <!-- Navigation Menu Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="monuments.html" class="nav-item">Monuments</a>
+        <a href="festivals.html" class="nav-item">Festivals</a>
+        <a href="cuisine.html" class="nav-item">Cuisine</a>
+        <a href="culture.html" class="nav-item">Culture</a>
+        <a href="contact.html" class="nav-btn active">Inquire Now</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="hamburger" id="hamburger-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- 2. PAGE HEADER BANNER-->
+  <div class="page-banner">
+    <div class="container">
+      <span class="page-subtitle">Connect with Our Tour Guides</span>
+      <h1 class="page-title">Inquire & Connect</h1>
+    </div>
+  </div>
+
+
+  <!-- 3. CONTACT FORM & INFO CARDS -->
+  <section id="contact" class="section bg-light-ivory">
+    <div class="container">
+
+      <div class="grid grid-2 contact-grid">
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-box glass-card">
+          <h3>Plan Your Custom Heritage Tour</h3>
+          <p>Fill out the form below, and our tourism curators will design a personalized travel plan tailored to your
+            interests, budget, and time frame.</p>
+
+          <form id="tour-inquiry-form" class="custom-form">
+            <div class="form-group">
+              <label for="form-name">Your Full Name</label>
+              <input type="text" id="form-name" required placeholder="e.g. exmple">
+            </div>
+
+            <div class="grid grid-2 form-row">
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input type="email" id="form-email" required placeholder="e.g. abc@example.com">
+              </div>
+              <div class="form-group">
+                <label for="form-phone">Phone Number</label>
+                <input type="tel" id="form-phone" placeholder="e.g. +91 00000 00000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-interest">Primary Cultural Interest</label>
+              <select id="form-interest">
+                <option value="monuments">Heritage Monuments & Architecture</option>
+                <option value="festivals">Festivals & Local Traditions</option>
+                <option value="spiritual">Spiritual Pilgrimages & Yoga</option>
+                <option value="cuisine">Regional Cuisines & Spice Tours</option>
+                <option value="mix">Custom Mix & Explorer Itinerary</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Describe Your Ideal Journey</label>
+              <textarea id="form-message" rows="4" required
+                placeholder="Tell us about the destinations you wish to cover, dates, and number of travelers..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Inquiry <i
+                class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info-map-box">
+
+          <div class="contact-cards-container">
+            <div class="contact-info-card glass-card">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="text">
+                <h4>India Tourism Central Office</h4>
+                <p>88 Janpath Road, Connaught Place, New Delhi, Pin-110001, India</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card glass-card">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="text">
+                <h4>Call Us (Toll-Free, 24/7)</h4>
+                <p>+91 89324 76201 </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card glass-card">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="text">
+                <h4>Email Us</h4>
+                <p>explore@heritageindia.gov.in</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card glass-card">
+              <div class="icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="text">
+                <h4>Working Hours</h4>
+                <p>Monday - Saturday: 9:00 AM - 6:00 PM IST</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. FOOTER-->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="grid grid-4 footer-grid">
+
+        <!-- Column 1: Branding -->
+        <div class="footer-col branding-col">
+          <a href="index.html" class="logo footer-logo">
+            <i class="fa-solid fa-dharmachakra logo-icon"></i>
+            <span class="logo-text text-white">Heritage <span class="logo-sub">India</span></span>
+          </a>
+          <p class="footer-about-text">Dedicated to chronicling, preserving, and promoting the historic architectures,
+            regional cultures, and traditional sciences of India.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/incredibleindia" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/incredibleindia/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@incredibleindia" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About India</a></li>
+            <li><a href="monuments.html">Monuments</a></li>
+            <li><a href="festivals.html">Festivals</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Explore More -->
+        <div class="footer-col">
+          <h3>Explore More</h3>
+          <ul class="footer-links">
+            <li><a href="cuisine.html">Traditional Cuisine</a></li>
+            <li><a href="culture.html">Art & Culture</a></li>
+            <li><a href="contact.html">Inquire & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Support -->
+        <div class="footer-col support-col">
+          <h3>Inquiries & Support</h3>
+          <p>National Tourist Helpline (Toll-Free, 24/7):</p>
+          <div class="helpline-number">
+            <i class="fa-solid fa-headset"></i>
+            <span>1363</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Heritage India Tourism Project. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Form Success Popup Notification Modal -->
+  <div id="success-popup" class="success-popup" aria-hidden="true" role="alert">
+    <div class="popup-box glass-card">
+      <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 id="success-popup-title">Inquiry Submitted!</h3>
+      <p id="success-popup-msg">Thank you for writing to us. Our cultural guides will design your custom itinerary and
+        contact you within 24 hours.</p>
+      <button class="btn btn-primary" id="success-close-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

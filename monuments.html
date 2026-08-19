@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =========================================================================
+       HERITAGE INDIA - MONUMENTS PAGE (monuments.html)
+       ========================================================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore India's historic monuments across North, South, East, and West India, as well as UNESCO World Heritage Sites.">
+  <title>Heritage India - Monuments</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 1. NAVIGATION BAR & HEADER -->
+  <header class="header sticky">
+    <div class="nav-container">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-dharmachakra logo-icon"></i>
+        <span class="logo-text">Heritage <span class="logo-sub">India</span></span>
+      </a>
+
+      <!-- Navigation Menu Links -->
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="monuments.html" class="nav-item active">Monuments</a>
+        <a href="festivals.html" class="nav-item">Festivals</a>
+        <a href="cuisine.html" class="nav-item">Cuisine</a>
+        <a href="culture.html" class="nav-item">Culture</a>
+        <a href="contact.html" class="nav-btn">Inquire Now</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="hamburger" id="hamburger-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- 2. PAGE HEADER BANNER -->
+  <div class="page-banner">
+    <div class="container">
+      <span class="page-subtitle">Timeless Marvels of Stone</span>
+      <h1 class="page-title">Historic Monuments</h1>
+    </div>
+  </div>
+
+
+  <!--  3. HERITAGE MONUMENTS GRID & REGION FILTERS -->
+  <section id="monuments" class="section bg-light-ivory">
+    <div class="container">
+
+      <!-- Region Filter Buttons -->
+      <div class="filter-wrapper">
+        <button class="filter-btn active" data-filter="all">All Regions</button>
+        <button class="filter-btn" data-filter="north">North India</button>
+        <button class="filter-btn" data-filter="south">South India</button>
+        <button class="filter-btn" data-filter="east">East India</button>
+        <button class="filter-btn" data-filter="west">West & Central</button>
+      </div>
+
+      <!-- Monuments Grid -->
+      <div class="grid grid-3" id="monuments-grid">
+
+        <!-- ================= NORTH INDIA MONUMENTS ================= -->
+
+        <!-- 1. Taj Mahal -->
+        <div class="monument-card card-item" data-region="north">
+          <div class="card-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=800&h=600&q=80"
+              alt="Taj Mahal, Agra" loading="lazy">
+            <span class="region-badge">North India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Taj Mahal</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Agra, Uttar Pradesh</p>
+            <p class="card-description">An ivory-white marble mausoleum commissioned in 1632 by Mughal emperor Shah
+              Jahan. A crown jewel of architecture and eternal love.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Red Fort -->
+        <div class="monument-card card-item" data-region="north">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pu78Bc-dlwQRPAGNr1ZHRceOegFIDj2YG43j9q4Bag&s=10"
+              alt="Red Fort, Delhi" loading="lazy">
+            <span class="region-badge">North India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Red Fort</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Delhi</p>
+            <p class="card-description">A historic red sandstone fort in Delhi that served as the main residence of the
+              Mughal emperors for nearly 200 years.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Qutub Minar -->
+        <div class="monument-card card-item" data-region="north">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpaSjw7bLMyuuSwCyolxkI_58K1v7Tb2N7wWS4ODtuPA&s=10"
+              alt="Qutub Minar, Delhi" loading="lazy">
+            <span class="region-badge">North India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Qutub Minar</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Delhi</p>
+            <p class="card-description">Standing tall at 73 meters, this five-story red sandstone minaret is a
+              masterpiece of early Indo-Islamic architecture built in 1192.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. India Gate -->
+        <div class="monument-card card-item" data-region="north">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3BRamETj1mbdvjLu5RTkP6GfXlDNewTqBPz8c8wnzoQ&s=10"
+              alt="India Gate, Delhi" loading="lazy">
+            <span class="region-badge">North India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">India Gate</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Delhi</p>
+            <p class="card-description">A prominent 42-meter high war memorial dedicated to soldiers who laid down their
+              lives in the First World War.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-star"></i> National Landmark</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Amber Fort -->
+        <div class="monument-card card-item" data-region="north">
+          <div class="card-image-box">
+            <img
+              src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?auto=format&fit=crop&w=800&h=600&q=80"
+              alt="Amber Fort, Jaipur" loading="lazy">
+            <span class="region-badge">North India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Amber Fort</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan</p>
+            <p class="card-description">Perched on a hilltop overlooking Maota Lake, famous for its artistic Hindu style
+              elements, mirror work, and grand courtyards.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ================= SOUTH INDIA MONUMENTS ================= -->
+
+        <!-- 6. Meenakshi Temple -->
+        <div class="monument-card card-item" data-region="south">
+          <div class="card-image-box">
+            <img src="https://www.archidust.com/blog/wp-content/uploads/2025/10/meenakshi-temple-in-Madurai-scaled.webp"
+              alt="Meenakshi Temple, Madurai" loading="lazy">
+            <span class="region-badge">South India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Meenakshi Temple</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Madurai, Tamil Nadu</p>
+            <p class="card-description">An ancient Dravidian temple complex dedicated to Goddess Meenakshi, famous for
+              its towering colorful gopurams sculptured with thousands of figures.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-place-of-worship"></i> Ancient Temple</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Mysore Palace -->
+        <div class="monument-card card-item" data-region="south">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrvGt7KVBoPQ1YaeSz3JoxXkTw71tDR4x0GqT_DzfTpz0P70LyjxVHc0&s=10"
+              alt="Mysore Palace, Karnataka" loading="lazy">
+            <span class="region-badge">South India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Mysore Palace</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Mysore, Karnataka</p>
+            <p class="card-description">The official residence of the Wadiyar dynasty. An Indo-Saracenic masterpiece
+              illuminated spectacularly by nearly 100,000 bulbs on festivals.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-crown"></i> Royal Palace</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Hampi -->
+        <div class="monument-card card-item" data-region="south">
+          <div class="card-image-box">
+            <img src="https://www.stayvista.com/blog/wp-content/uploads/2024/09/Hampi_karnataka.jpg"
+              alt="Hampi, Karnataka" loading="lazy">
+            <span class="region-badge">South India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Hampi</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Hampi, Karnataka</p>
+            <p class="card-description">The capital ruins of the medieval Vijayanagara Empire, featuring thousands of
+              ancient carved granite stone temples and monolithic chariots.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Brihadeeswara Temple -->
+        <div class="monument-card card-item" data-region="south">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIA3kNPVro8aJhbJjIasC_rOLiVDxOzaIyYbTDgn7qA&s=10"
+              alt="Brihadeeswara Temple" loading="lazy">
+            <span class="region-badge">South India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Brihadeeswara Temple</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Tanjore, Tamil Nadu</p>
+            <p class="card-description">Built by Raja Raja Chola I in 1010 AD, boasting the world's tallest granite
+              shrine tower and remarkable Chola dynasty art.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ================= WEST INDIA MONUMENTS ================= -->
+
+        <!-- 10. Gateway of India -->
+        <div class="monument-card card-item" data-region="west">
+          <div class="card-image-box">
+            <img src="gateway.jpeg" alt="Gateway of India, Mumbai" loading="lazy">
+            <span class="region-badge">West India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Gateway of India</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra</p>
+            <p class="card-description">An iconic 26-meter arch monument erected to commemorate the landing of King
+              George V and Queen Mary at Apollo Bunder in 1911.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-archway"></i> Historic Arch</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Ajanta Ellora Caves -->
+        <div class="monument-card card-item" data-region="west">
+          <div class="card-image-box">
+            <img src="caveajanta.jpeg" alt="Ajanta Ellora Caves" loading="lazy">
+            <span class="region-badge">West India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Ajanta Ellora Caves</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Chhatrapati Sambhajinagar, Maharashtra</p>
+            <p class="card-description">Ancient rock-cut cave monuments featuring masterpiece Buddhist murals and the
+              monolithic rock-cut Kailasa temple carved out of a single mountain rock.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Chittorgarh Fort -->
+        <div class="monument-card card-item" data-region="west">
+          <div class="card-image-box">
+            <img src="fortchittorgarh.jpeg" alt="Chittorgarh Fort" loading="lazy">
+            <span class="region-badge">West India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Chittorgarh Fort</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Chittorgarh, Rajasthan</p>
+            <p class="card-description">One of the largest fortresses in India, symbolizing Rajput valor, chivalry, and
+              sacrifice spread across 700 acres atop a 180-meter hill.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Mehrangarh Fort -->
+        <div class="monument-card card-item" data-region="west">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dMxP_dKdhZX8vDqUyrVwmyg6JI_YqatZkizwOx1ogQ&s=10"
+              alt="Mehrangarh Fort" loading="lazy">
+            <span class="region-badge">West India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Mehrangarh Fort</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Jodhpur, Rajasthan</p>
+            <p class="card-description">Rising 400 feet above the Blue City of Jodhpur, enclosed by thick walls holding
+              ornate palaces and ancient royal court relics.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-shield-halved"></i> Historic Citadel</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ================= EAST INDIA MONUMENTS ================= -->
+
+        <!-- 14. Victoria Memorial -->
+        <div class="monument-card card-item" data-region="east">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblbPUf7BCo1cPVTDdanzgBb0x-4xIIxfirTPxM10GNQ&s=10"
+              alt="Victoria Memorial, Kolkata" loading="lazy">
+            <span class="region-badge">East India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Victoria Memorial</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal</p>
+            <p class="card-description">A majestic white marble building in Kolkata built between 1906 and 1921,
+              blending Indo-Saracenic revival architecture with British heritage gardens.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-building-columns"></i> National Museum</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Konark Sun Temple -->
+        <div class="monument-card card-item" data-region="east">
+          <div class="card-image-box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-kFqf3q25zJk6EYqZiGG4VFmbfEmsB1p0883A9A4tCg&s=10"
+              alt="Sun Temple, Konark" loading="lazy">
+            <span class="region-badge">East India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Konark Sun Temple</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Konark, Odisha</p>
+            <p class="card-description">Designed as a colossal 13th-century stone chariot for the Sun God Surya,
+              complete with 24 carved wheels pulled by seven galloping horses.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-ribbon"></i> UNESCO Site</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. Jagannath Temple -->
+        <div class="monument-card card-item" data-region="east">
+          <div class="card-image-box">
+            <img src="Jagannath .jpeg" alt="Jagannath Temple, Odisha" loading="lazy">
+            <span class="region-badge">East India</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Jagannath Temple</h3>
+            <p class="card-subtitle"><i class="fa-solid fa-location-dot"></i> Puri, Odisha</p>
+            <p class="card-description">A famous 12th-century sacred temple dedicated to Lord Jagannath, renowned
+              worldwide for its annual grand Rath Yatra chariot procession.</p>
+            <div class="card-footer-action">
+              <span class="heritage-tag"><i class="fa-solid fa-gopuram"></i> Sacred Shrine</span>
+              <a href="contact.html" class="card-link">Inquire <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       4. UNESCO WORLD HERITAGE SITES OF INDIA SECTION
+       ========================================================================= -->
+  <section class="section">
+    <div class="container">
+
+      <div class="cultural-title-block">
+        <span class="subtitle">Global Heritage Recognition</span>
+        <h2 class="section-title">UNESCO World Heritage Sites Of India</h2>
+        <div class="divider-container">
+          <span class="line"></span>
+          <i class="fa-solid fa-ribbon mini-icon"></i>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <p class="lead-text-center">India has many UNESCO World Heritage Sites that represent its history, architecture
+        and cultural importance.</p>
+
+      <div class="grid grid-3 unesco-grid">
+
+        <!-- Site 1 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-monument"></i></div>
+          <h3>Taj Mahal</h3>
+          <p>Mausoleum in Agra recognized worldwide as a jewel of Islamic architectural heritage.</p>
+        </div>
+
+        <!-- Site 2 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+          <h3>Ajanta Ellora Caves</h3>
+          <p>Rock-cut cave temples and ancient paintings carved in Maharashtra.</p>
+        </div>
+
+        <!-- Site 3 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-chess-rook"></i></div>
+          <h3>Hampi</h3>
+          <p>Surreal boulder landscape filled with monumental Vijayanagara empire temples.</p>
+        </div>
+
+        <!-- Site 4 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-gopuram"></i></div>
+          <h3>Khajuraho Temples</h3>
+          <p>Nagara-style stone temples famous for intricate sculptured artwork.</p>
+        </div>
+
+        <!-- Site 5 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-city"></i></div>
+          <h3>Jaipur City</h3>
+          <p>The historic Pink City known for royal palace planning and fortified architecture.</p>
+        </div>
+
+        <!-- Site 6 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-place-of-worship"></i></div>
+          <h3>Sanchi Stupa</h3>
+          <p>One of the oldest stone Buddhist structures commissioned by Emperor Ashoka.</p>
+        </div>
+
+        <!-- Site 7 -->
+        <div class="unesco-card glass-card">
+          <div class="unesco-icon"><i class="fa-solid fa-sun"></i></div>
+          <h3>Konark Sun Temple</h3>
+          <p>13th-century sun god stone chariot with 24 carved sun-dial wheels.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       5. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="grid grid-4 footer-grid">
+
+        <!-- Column 1: Branding -->
+        <div class="footer-col branding-col">
+          <a href="index.html" class="logo footer-logo">
+            <i class="fa-solid fa-dharmachakra logo-icon"></i>
+            <span class="logo-text text-white">Heritage <span class="logo-sub">India</span></span>
+          </a>
+          <p class="footer-about-text">Dedicated to chronicling, preserving, and promoting the historic architectures,
+            regional cultures, and traditional sciences of India.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/incredibleindia" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/incredibleindia/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@incredibleindia" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About India</a></li>
+            <li><a href="monuments.html">Monuments</a></li>
+            <li><a href="festivals.html">Festivals</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Explore More -->
+        <div class="footer-col">
+          <h3>Explore More</h3>
+          <ul class="footer-links">
+            <li><a href="cuisine.html">Traditional Cuisine</a></li>
+            <li><a href="culture.html">Art & Culture</a></li>
+            <li><a href="contact.html">Inquire & Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Support -->
+        <div class="footer-col support-col">
+          <h3>Inquiries & Support</h3>
+          <p>National Tourist Helpline (Toll-Free, 24/7):</p>
+          <div class="helpline-number">
+            <i class="fa-solid fa-headset"></i>
+            <span>1363</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Heritage India Tourism Project. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
