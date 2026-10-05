@@ -1,0 +1,13 @@
+{
+  "name": "heritage-india-project",
+  "version": "1.0.0",
+  "description": "Heritage India Project with Live Frontend Auto-Reload and Backend API",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon --watch backend --watch frontend --ext js,html,css,json backend/server.js",
+    "live": "npx live-server frontend --port=5500"
+  },
+  "keywords": ["heritage", "india", "html", "css", "javascript", "nodejs", "express"],
+  "author": "",
+  "license": "ISC"
+}

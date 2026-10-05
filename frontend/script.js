@@ -25,6 +25,41 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* SECTION 2: MOBILE HAMBURGER MENU */
+  var hamburgerBtn = document.getElementById('hamburger-toggle');
+  var navLinks = document.querySelector('.nav-links');
+
+  if (hamburgerBtn && navLinks) {
+    hamburgerBtn.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+      hamburgerBtn.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!hamburgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('active');
+        hamburgerBtn.classList.remove('active');
+      }
+    });
+  }
+
+  /* SECTION 2B: BACK TO TOP BUTTON */
+  var backToTopBtn = document.getElementById('back-to-top');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
 
   /* SECTION 3: HERO IMAGE SLIDESHOW (Runs on index.html) */
   var heroSlides = document.querySelectorAll('.hero-slide');
@@ -190,13 +225,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var userName = document.getElementById('form-name').value;
       var userEmail = document.getElementById('form-email').value;
+      var userPhone = document.getElementById('form-phone').value;
+      var userInterest = document.getElementById('form-interest').value;
+      var userMessage = document.getElementById('form-message').value;
 
-      if (userName && userEmail) {
-        openSuccessPopup(
-          'Inquiry Submitted!',
-          'Thank you, ' + userName + '! We have received your inquiry. Our cultural tourism curators will contact you at ' + userEmail + ' within 24 hours.'
-        );
-        tourForm.reset();
+      if (userName && userEmail && userMessage) {
+        // Send form data to the backend API (Node.js + MongoDB)
+        fetch('http://localhost:5000/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: userName,
+            email: userEmail,
+            phone: userPhone,
+            interest: userInterest,
+            message: userMessage,
+          }),
+        })
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            if (data.success) {
+              openSuccessPopup(
+                'Inquiry Submitted!',
+                'Thank you, ' + userName + '! We have received your inquiry and saved it to our database. Our cultural tourism curators will contact you at ' + userEmail + ' within 24 hours.'
+              );
+              tourForm.reset();
+            } else {
+              alert('Error: ' + (data.error || 'Something went wrong. Please try again.'));
+            }
+          })
+          .catch(function (error) {
+            console.error('Fetch error:', error);
+            alert('Could not connect to the server. Please make sure the backend is running.');
+          });
       }
     });
   }

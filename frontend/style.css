@@ -1092,16 +1092,22 @@ ul {
 }
 
 .social-links a {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 25px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(212, 175, 55, 0.2);
   color: var(--accent-gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: rgba(212, 175, 55, 0.2);
+  color: #fff;
 }
 
 .footer-bottom {
